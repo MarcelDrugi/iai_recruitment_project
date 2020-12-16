@@ -1,0 +1,1 @@
+<h2>Witaj na stronie głównej</h2>
