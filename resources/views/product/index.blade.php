@@ -1,41 +1,3 @@
-<script>
-	const selectExistingProduct = (event) => {
-		const product = JSON.parse(event.target.value);
-		console.log(product);
-		
-		const newProductInputs = document.getElementById('newProductData');
-		newProductInputs.style.display = 'none';
-		document.getElementById('newProductCheckBox').checked = false;
-		
-		const productInputs = document.getElementById('existingProductData');
-		productInputs.style.display = 'block';
-		
-		document.getElementById('name').value = product.name;
-		document.getElementById('description').value = product.description;
-		document.getElementById('price').value = product.unit_price;
-		document.getElementById('unit').value = product.unit;
-		document.getElementById('tax').value = (product.tax * 100);
-		document.getElementById('id').value = product.id;
-		
-	};
-	
-	const newProduct = (event) => {
-		if(event.target.checked == true) {
-			const productInputs = document.getElementById('existingProductData');
-			productInputs.style.display = 'none';
-			
-			document.getElementById('existingProduct').value = 'begin';
-			
-			const newProductInputs = document.getElementById('newProductData');
-			newProductInputs .style.display = 'block';
-		}
-		else if(event.target.checked == false) {
-			const newProductInputs = document.getElementById('newProductData');
-			newProductInputs .style.display = 'none';
-		}
-	};
-</script>
-
 
 @extends('layout')
 
@@ -108,8 +70,8 @@
             	<input type="text" id="description" name="description" class="form-control col-8">
             </div>
             <div class="group form-row">
-            	<label for="price" class="col-3">Cana jednostkowa (PLN): </label>
-            	<input type="text" id="price" name="price" class="form-control col-8">
+            	<label for="unit_price" class="col-3">Cana jednostkowa (PLN): </label>
+            	<input type="text" id="unit_price" name="unit_price" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="unit" class="col-3">jednostka: </label>
@@ -143,8 +105,8 @@
             	<input type="text" id="description" name="description" class="form-control col-8">
             </div>
             <div class="group form-row">
-            	<label for="price" class="col-3">Cana jednostkowa (PLN): </label>
-            	<input type="text" id="price" name="price" class="form-control col-8">
+            	<label for="unit_price" class="col-3">Cana jednostkowa (PLN): </label>
+            	<input type="text" id="unit_price" name="unit_price" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="unit" class="col-3">jednostka: </label>

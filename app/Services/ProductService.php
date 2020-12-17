@@ -15,7 +15,7 @@ class ProductService
     }
     
     static public function createProductService($data) {
-        if(empty($data['name']) || empty($data['price']) || empty($data['unit']) || empty($data['tax']))
+        if(empty($data['name']) || empty($data['unit_price']) || empty($data['unit']) || empty($data['tax']))
             throw new OutOfBoundsException('Not all mandatory fields are available.');
         
         return new self($data);
@@ -25,7 +25,7 @@ class ProductService
         $product = new Product([
             'name' => $this->data['name'],
             'description' => $this->data['description'] ? $this->data['description']: null,
-            'unit_price' => $this->data['price'],
+            'unit_price' => $this->data['unit_price'],
             'unit' => $this->data['unit'],
             'tax' => $this->data['tax'] / 100,
         ]);
@@ -43,7 +43,7 @@ class ProductService
         
         $product->name = $this->data['name'];
         $product->description = $this->data['description'] ? $this->data['description']: null;
-        $product->unit_price = $this->data['price'];
+        $product->unit_price = $this->data['unit_price'];
         $product->unit = $this->data['unit'];
         $product->tax = $this->data['tax'] / 100;
 
