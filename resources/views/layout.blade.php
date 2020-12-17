@@ -2,7 +2,7 @@
 <html>
 	<head>
         <meta charset="utf-8">
-        <title>{{ __('CINEMA CLASSICS') }}</title>
+        <title>VAT</title>
     
         <!-- Scripts -->
         <script src="/js/app.js"></script>

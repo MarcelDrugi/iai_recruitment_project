@@ -1,6 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
+    "/../resources/css/global.css": "/../resources/css/global.css",
     "/../resources/css/homepage/index.css": "/../resources/css/homepage/index.css",
+    "/../resources/css/products/index.css": "/../resources/css/products/index.css",
     "/js/main.js": "/js/main.js",
     "/css/main.css": "/css/main.css"
 }
