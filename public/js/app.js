@@ -37343,6 +37343,39 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/less/invoice-list/index.less":
+/*!************************************************!*\
+  !*** ./resources/less/invoice-list/index.less ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/less/invoice-preview/index.less":
+/*!***************************************************!*\
+  !*** ./resources/less/invoice-preview/index.less ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/less/invoice/index.less":
+/*!*******************************************!*\
+  !*** ./resources/less/invoice/index.less ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/less/products/index.less":
 /*!********************************************!*\
   !*** ./resources/less/products/index.less ***!
@@ -37355,16 +37388,19 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/less/global.less ./resources/less/homepage/index.less ./resources/less/products/index.less ***!
-  \******************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/less/global.less ./resources/less/homepage/index.less ./resources/less/products/index.less ./resources/less/invoice/index.less ./resources/less/invoice-preview/index.less ./resources/less/invoice-list/index.less ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/less/global.less */"./resources/less/global.less");
 __webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/less/homepage/index.less */"./resources/less/homepage/index.less");
-module.exports = __webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/less/products/index.less */"./resources/less/products/index.less");
+__webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/less/products/index.less */"./resources/less/products/index.less");
+__webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/less/invoice/index.less */"./resources/less/invoice/index.less");
+__webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/less/invoice-preview/index.less */"./resources/less/invoice-preview/index.less");
+module.exports = __webpack_require__(/*! /home/piotr/Pulpit/zadanie/iai_zadanie_rekrutacyjne/iai_recruitment_project/resources/less/invoice-list/index.less */"./resources/less/invoice-list/index.less");
 
 
 /***/ })

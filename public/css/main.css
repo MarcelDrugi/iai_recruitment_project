@@ -41,6 +41,9 @@ body {
 h3 {
   font-size: 1.6vw;
 }
+h4 {
+  font-size: 1.3vw;
+}
 .alert {
   font-size: 1.2vw;
   width: 80vw;
@@ -72,7 +75,8 @@ h2 {
   font-size: 1vw;
   margin-bottom: 3vh;
 }
-.product input {
+.product input,
+.product textarea {
   font-size: 1vw;
 }
 .product label {
@@ -80,6 +84,7 @@ h2 {
   text-align: right;
   font-size: 1vw;
   margin-right: 1vw;
+  margin-top: 0.5vh;
 }
 .product .btn-secondary {
   font-size: 1.2vw;
@@ -105,12 +110,207 @@ h2 {
 .productSwitch {
   font-size: 1.2vw;
   margin-top: 4vw;
-  margin-left: 25vw;
 }
 .productSwitch label {
-  margin-bottom: 20px;
+  width: 10vw;
+  text-align: left;
+  font-size: 0.9vw;
 }
 .newProduct h3 {
   width: 100%;
   text-align: center;
+}
+
+.headerData {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: 10vh;
+  text-align: center;
+  border: 0.1vw solid hsl(167, 100%, 15%);
+  border-radius: 0.4vw;
+  padding-bottom: 1vh;
+}
+.headerData input[type='text'] {
+  font-size: 1vw;
+  margin-top: 1vh;
+}
+.headerData label {
+  font-size: 1vw;
+  margin-top: 2vh;
+  margin-right: 1vw;
+  text-align: right;
+}
+.headerData .custom-switch {
+  width: 30vw;
+  text-align: left;
+  margin-left: 18vw;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+.headerData .custom-switch label {
+  font-size: 0.85vw;
+  margin-top: 0;
+}
+.issuer {
+  margin-top: 3vh;
+}
+.issuer .issuerData,
+.issuer select {
+  font-size: 1vw;
+  margin-top: 1vh;
+}
+.invoiceForm .btn {
+  font-size: 1vw;
+}
+.invoiceForm .newItemButton {
+  display: block;
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+.invoiceForm .confirmButton {
+  display: block;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  margin-left: 30vw;
+  width: 40vw;
+  font-size: 1.2vw;
+  font-weight: 900;
+  border: 0.1vw solid black;
+}
+.singleItem {
+  font-size: 1vw;
+  margin-top: 1vh;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  border: 0.1vw solid hsl(167, 100%, 15%);
+  background-color: hsl(210, 15.6%, 87.5%);
+}
+.singleItem div {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.singleItem label {
+  width: 100%;
+  text-align: center;
+  margin-top: 1vh;
+  border: 0.1vw solid hsl(167, 100%, 15%);
+}
+.singleItem .btn {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+.summaryInvoice {
+  width: 68vw;
+  margin-left: 15vw;
+  font-size: 1.2vw;
+  text-align: right;
+  font-weight: 700;
+}
+.deliveryGroup {
+  font-size: 1vw;
+  margin-bottom: 2vh;
+  width: 30vw;
+  margin-left: 60vw;
+}
+.deliveryGroup label {
+  margin-top: 0.4vh;
+}
+
+.invoicePreview {
+  width: 60vw;
+  margin-left: 20vw;
+  background-color: white;
+  padding: 1vw;
+  border: 0.1vw double black;
+  margin-top: 10vh;
+}
+.buyer {
+  background-color: hsl(240, 3%, 94%);
+  font-size: 0.9vw;
+  padding: 0.5vw;
+}
+.buyer div {
+  margin-top: 1vh;
+}
+.seller {
+  background-color: hsl(240, 3%, 94%);
+  font-size: 0.9vw;
+  padding: 0.5vw;
+  background-color: white;
+}
+.seller div {
+  margin-top: 1vh;
+}
+.invoicePreviewHeader {
+  font-size: 1.2vw;
+}
+.invoicePreviewHeader h4 {
+  width: 100%;
+  text-align: center;
+  background-color: hsl(240, 3%, 94%);
+  margin-top: 5vh;
+}
+.table {
+  text-align: center;
+  font-size: 0.6vw;
+  margin-top: 3vh;
+}
+.deliveryPreview {
+  width: 90%;
+  margin-top: 2vh;
+  text-align: right;
+  font-size: 0.8vw;
+}
+.toPayPreview {
+  width: 90%;
+  margin-top: 2vh;
+  text-align: right;
+  font-size: 0.8vw;
+  font-size: 1.1vw;
+  font-weight: 800;
+  width: 100%;
+  background-color: hsl(240, 3%, 94%);
+}
+.previewButton {
+  text-align: center;
+  margin-top: 4vh;
+}
+.previewButton .btn {
+  font-size: 1vw;
+  width: 8vw;
+}
+
+.invoiceWrapper {
+  margin-top: 11vh;
+}
+.invoiceList {
+  text-align: center;
+  margin-bottom: 28vh;
+}
+.invoiceList select {
+  font-size: 1vw;
+}
+.invoiceList .btn {
+  margin-top: 4vh;
+  font-size: 1vw;
+}
+.invoiceLook {
+  margin-bottom: 4vh;
+  border: 0.1vw solid black;
+  background-color: hsl(240, 3%, 94%);
+}
+.invoiceLook .table {
+  font-size: 0.7vw;
+}
+.invoiceLook .invoiceDeliveryCost {
+  width: 90%;
+  text-align: right;
+  font-size: 0.9vw;
+}
+.invoiceLook .invoiceToPay {
+  width: 90%;
+  text-align: right;
+  font-size: 1.1vw;
 }

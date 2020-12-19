@@ -15,7 +15,8 @@
   font-size: 1vw;
   margin-bottom: 3vh;
 }
-.product input {
+.product input,
+.product textarea {
   font-size: 1vw;
 }
 .product label {
@@ -23,6 +24,7 @@
   text-align: right;
   font-size: 1vw;
   margin-right: 1vw;
+  margin-top: 0.5vh;
 }
 .product .btn-secondary {
   font-size: 1.2vw;
@@ -48,10 +50,11 @@
 .productSwitch {
   font-size: 1.2vw;
   margin-top: 4vw;
-  margin-left: 25vw;
 }
 .productSwitch label {
-  margin-bottom: 20px;
+  width: 10vw;
+  text-align: left;
+  font-size: 0.9vw;
 }
 .newProduct h3 {
   width: 100%;

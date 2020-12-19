@@ -1,0 +1,96 @@
+.headerData {
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: 10vh;
+  text-align: center;
+  border: 0.1vw solid hsl(167, 100%, 15%);
+  border-radius: 0.4vw;
+  padding-bottom: 1vh;
+}
+.headerData input[type='text'] {
+  font-size: 1vw;
+  margin-top: 1vh;
+}
+.headerData label {
+  font-size: 1vw;
+  margin-top: 2vh;
+  margin-right: 1vw;
+  text-align: right;
+}
+.headerData .custom-switch {
+  width: 30vw;
+  text-align: left;
+  margin-left: 18vw;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+.headerData .custom-switch label {
+  font-size: 0.85vw;
+  margin-top: 0;
+}
+.issuer {
+  margin-top: 3vh;
+}
+.issuer .issuerData,
+.issuer select {
+  font-size: 1vw;
+  margin-top: 1vh;
+}
+.invoiceForm .btn {
+  font-size: 1vw;
+}
+.invoiceForm .newItemButton {
+  display: block;
+  margin-top: 1vh;
+  margin-left: 15vw;
+}
+.invoiceForm .confirmButton {
+  display: block;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  margin-left: 30vw;
+  width: 40vw;
+  font-size: 1.2vw;
+  font-weight: 900;
+  border: 0.1vw solid black;
+}
+.singleItem {
+  font-size: 1vw;
+  margin-top: 1vh;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  border: 0.1vw solid hsl(167, 100%, 15%);
+  background-color: hsl(210, 15.6%, 87.5%);
+}
+.singleItem div {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.singleItem label {
+  width: 100%;
+  text-align: center;
+  margin-top: 1vh;
+  border: 0.1vw solid hsl(167, 100%, 15%);
+}
+.singleItem .btn {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+.summaryInvoice {
+  width: 68vw;
+  margin-left: 15vw;
+  font-size: 1.2vw;
+  text-align: right;
+  font-weight: 700;
+}
+.deliveryGroup {
+  font-size: 1vw;
+  margin-bottom: 2vh;
+  width: 30vw;
+  margin-left: 60vw;
+}
+.deliveryGroup label {
+  margin-top: 0.4vh;
+}

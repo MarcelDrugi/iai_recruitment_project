@@ -1,0 +1,69 @@
+
+@backgroundColor: hsl(240, 3%, 94%);
+
+
+.invoicePreview {
+	width: 60vw;
+	margin-left: 20vw;
+	background-color: white;
+	padding: 1vw;
+	border: 0.1vw double black;
+	margin-top: 10vh;
+}
+
+.buyer {
+	background-color: @backgroundColor;
+	font-size: 0.9vw;
+	padding: 0.5vw;
+	
+	div {
+		margin-top: 1vh;
+	}
+}
+
+.seller {
+	.buyer;
+	background-color: white;
+}
+
+.invoicePreviewHeader {
+	font-size: 1.2vw;
+	
+	h4 {
+		width: 100%;
+		text-align: center;
+		background-color: @backgroundColor;
+		margin-top: 5vh;
+	}
+}
+
+.table {
+	text-align: center;
+	font-size: 0.6vw;
+	margin-top: 3vh;
+}
+
+.deliveryPreview {
+	width: 90%;
+	margin-top: 2vh;
+	text-align: right;
+	font-size: 0.8vw;
+}
+
+.toPayPreview {
+	.deliveryPreview;
+	font-size: 1.1vw;
+	font-weight: 800;
+	width: 100%;
+	background-color: @backgroundColor;
+}
+
+.previewButton {
+	.btn{
+		font-size: 1vw;
+		width: 8vw;
+	}
+	text-align: center;
+	margin-top: 4vh;
+}
+

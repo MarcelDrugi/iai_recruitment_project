@@ -3,6 +3,9 @@
     "/../resources/css/global.css": "/../resources/css/global.css",
     "/../resources/css/homepage/index.css": "/../resources/css/homepage/index.css",
     "/../resources/css/products/index.css": "/../resources/css/products/index.css",
+    "/../resources/css/invoice/index.css": "/../resources/css/invoice/index.css",
+    "/../resources/css/invoice-preview/index.css": "/../resources/css/invoice-preview/index.css",
+    "/../resources/css/invoice-list/index.css": "/../resources/css/invoice-list/index.css",
     "/js/main.js": "/js/main.js",
     "/css/main.css": "/css/main.css"
 }

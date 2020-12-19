@@ -1,7 +1,6 @@
 
 const selectExistingProduct = (event) => {
 	const product = JSON.parse(event.target.value);
-	console.log(product);
 	
 	const newProductInputs = document.getElementById('newProductData');
 	newProductInputs.style.display = 'none';
@@ -20,17 +19,17 @@ const selectExistingProduct = (event) => {
 };
 
 const newProduct = (event) => {
+	
+	const newProductInputs = document.getElementById('newProductData');
+	
 	if(event.target.checked == true) {
 		const productInputs = document.getElementById('existingProductData');
 		productInputs.style.display = 'none';
 		
 		document.getElementById('existingProduct').value = 'begin';
-		
-		const newProductInputs = document.getElementById('newProductData');
 		newProductInputs .style.display = 'block';
 	}
 	else if(event.target.checked == false) {
-		const newProductInputs = document.getElementById('newProductData');
 		newProductInputs .style.display = 'none';
 	}
 };

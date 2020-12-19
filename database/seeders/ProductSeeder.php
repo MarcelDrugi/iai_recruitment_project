@@ -12,7 +12,7 @@ class ProductSeeder extends Seeder
         $product = new Product([
             'name' => 'Cement SUPER-CEMENT 25kg',
             'description' => '',
-            'unit_price' => 15.50,
+            'unit_price' => 15.55,
             'tax' => 0.23,
         ]);
         $product->save();

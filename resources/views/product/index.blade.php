@@ -7,8 +7,8 @@
     	<ul class="nav nav-tabs">
     		<li class="nav-item"><a class="nav-link" href="{{ route('homepage.index') }}">Strona główna</a></li>
             <li class="nav-item"><a class="nav-link active" href="{{ route('products.index') }}">Dodaj/usuń produkt</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Wystaw fakturę</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Wystawione faktury</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('invoice.index') }}">Wystaw fakturę</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('invoice-list.index') }}">Wystawione faktury</a></li>
     	</ul>
     </div>
 
@@ -57,64 +57,67 @@
     	<select class="form-control" name="existingProduct" id="existingProduct" onchange="selectExistingProduct(event)">
     		<option selected="selected" value="begin" disabled>wybierz produkt</option>
     		@foreach($products as $product)
-          		<option value="{{ $product }}">{{ $product->name }}</option>
+    			@if($product == old('existingProduct'))
+    				<option value="{{ $product }}" selected="selected">{{ $product->name }}</option>
+    			@else
+          			<option value="{{ $product }}">{{ $product->name }}</option>
+          		@endif
           	@endforeach
         </select>
-        <div id="existingProductData" style="display: none">
+        <div id="existingProductData" @if(old('existingProduct')) style="display: block;" @else style="display: none;" @endif>
             <div class="group form-row">
             	<label for="name" class="col-3">nazwa: </label>
-            	<input type="text" id="name" name="name" class="form-control col-8">
+            	<input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="description" class="col-3">opis (opcjonalnie): </label>
-            	<input type="text" id="description" name="description" class="form-control col-8">
+            	<textarea type="text" id="description" name="description"  value="{{ old('description') }}" class="form-control col-8"></textarea>
             </div>
             <div class="group form-row">
-            	<label for="unit_price" class="col-3">Cana jednostkowa (PLN): </label>
-            	<input type="text" id="unit_price" name="unit_price" class="form-control col-8">
+            	<label for="unit_price" class="col-3">Cana jedn. netto (PLN): </label>
+            	<input type="text" id="unit_price" name="unit_price" value="{{ old('unit_price') }}" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="unit" class="col-3">jednostka: </label>
-            	<input type="text" id="unit" name="unit" class="form-control col-8">
+            	<input type="text" id="unit" name="unit" value="{{ old('unit') }}" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="tax" class="col-3">podatek VAT (%): </label>
-            	<input type="text" id="tax" name="tax" class="form-control col-8">
+            	<input type="text" id="tax" name="tax" value="{{ old('tax') }}" class="form-control col-8">
             </div>
-            <input type="hidden" id="id" name="id">
+            <input type="hidden" id="id" name="id" value="{{ old('id') }}">
             <button type="submit" name="update" class="btn btn-secondary" formaction="{{ route('products.update') }}">edytuj produkt</button>
             <button type="submit" name="remove" class="btn btn-danger" formaction="{{ route('products.update') }}">usuń produkt</button>
         </div>
 	</form>
 	
-	<div class="custom-control custom-switch productSwitch">
-		<input type="checkbox" class="custom-control-input" id="newProductCheckBox" onchange="newProduct(event)">
-		<label class="custom-control-label" for="newProductCheckBox">Dodaj nowy produkt</label>
-    </div>
-	
 	<form method="post" class="product" action="{{ route('products.store') }}">
 		@csrf
-        <div id="newProductData" style="display: none" class="newProduct">
+		<div class="custom-control custom-switch productSwitch">
+    		<input type="checkbox" class="custom-control-input" id="newProductCheckBox" name="newProductCheckBox" @if(old('newProductCheckBox')) checked @endif onchange="newProduct(event)">
+    		<label class="custom-control-label" for="newProductCheckBox">Dodaj nowy produkt</label>
+        </div>
+        <div id="newProductData" @if(old('newProductCheckBox')) style="display: block;" @else style="display: none;" @endif class="newProduct">
        		<h3>STWÓRZ NOWY PRODUKT</h3>
             <div class="group form-row">
             	<label for="name" class="col-3">nazwa: </label>
-            	<input type="text" id="name" name="name" class="form-control col-8">
+            	<input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="description" class="col-3">opis (opcjonalnie): </label>
-            	<input type="text" id="description" name="description" class="form-control col-8">
+            	<textarea id="description" name="description" class="form-control col-8">{{ old('description') }}</textarea>
             </div>
             <div class="group form-row">
-            	<label for="unit_price" class="col-3">Cana jednostkowa (PLN): </label>
-            	<input type="text" id="unit_price" name="unit_price" class="form-control col-8">
+            	<label for="unit_price" class="col-3">Cana jedn. netto (PLN): </label>
+            	<input type="text" id="unit_price" name="unit_price" value="{{ old('unit_price') }}" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="unit" class="col-3">jednostka: </label>
-            	<input type="text" id="unit" name="unit" class="form-control col-8">
+            	<input type="text" id="unit" name="unit" value="{{ old('unit') }}" class="form-control col-8">
             </div>
             <div class="group form-row">
             	<label for="tax" class="col-3">podatek VAT (%): </label>
-            	<input type="text" id="tax" name="tax" class="form-control col-8">
+            	<input type="text" id="tax" name="tax" value="{{ old('tax') }}" class="form-control col-8">
             </div>
             <button type="submit" class="btn btn-info">stwórz nowy produkt</button>
         </div>

@@ -8,9 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use \Exception;
 
 class Product extends Model
-{
-    use HasFactory;
-    
+{ 
     protected $fillable = [
         'name',
         'description',
