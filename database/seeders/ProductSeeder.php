@@ -33,5 +33,23 @@ class ProductSeeder extends Seeder
             'tax' => 0.23,
         ]);
         $product->save();
+        
+        $product = new Product([
+            'name' => 'Grunt malarski 5l',
+            'description' => '',
+            'unit_price' => 8.50,
+            'unit' => 'szt',
+            'tax' => 0.07,
+        ]);
+        $product->save();
+        
+        $product = new Product([
+            'name' => 'Gwodździe nierdzewne 10cm',
+            'description' => '',
+            'unit_price' => 13.50,
+            'unit' => 'kg',
+            'tax' => 0.15,
+        ]);
+        $product->save();
     }
 }

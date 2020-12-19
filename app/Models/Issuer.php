@@ -15,6 +15,6 @@ class Issuer extends Model
     ];
     
     public function invoices() {
-        return $this->hasMany(Invoice::class, 'invoice_code');
+        return $this->hasMany(Invoice::class, 'issuer_id');
     }
 }

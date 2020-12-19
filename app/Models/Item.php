@@ -24,7 +24,7 @@ class Item extends Model
     ];
     
     public function invoice() {
-        return $this->belongsTo(Invoice::class, 'invoice_code');
+        return $this->belongsTo(Invoice::class, 'invoice_code', 'code');
     }
     
     public function save(array $options = array())

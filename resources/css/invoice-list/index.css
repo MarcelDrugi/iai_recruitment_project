@@ -30,3 +30,6 @@
   text-align: right;
   font-size: 1.1vw;
 }
+.invoicePreviewHeader > h4 {
+  background-color: white;
+}

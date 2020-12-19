@@ -54,8 +54,26 @@ h4 {
   text-align: center;
 }
 
-h2 {
-  color: blue;
+.info {
+  font-size: 1vw;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: 10vh;
+  text-align: center;
+}
+.info ul {
+  text-align: left;
+}
+.info a {
+  margin-left: 1vw;
+  color: hsl(173, 85%, 29%);
+}
+.repo img {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+.personalData {
+  margin-top: 5vh;
 }
 
 .productLabel {
@@ -313,4 +331,7 @@ h2 {
   width: 90%;
   text-align: right;
   font-size: 1.1vw;
+}
+.invoicePreviewHeader > h4 {
+  background-color: white;
 }
