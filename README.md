@@ -1,6 +1,6 @@
 ## Invoice management
 Rrecruitment task for IAI.
-#### Live demo: [klasyczne-kino.infinityfreeapp.com](http://klasyczne-kino.infinityfreeapp.com/)
+#### Live demo: [piotr-mazur.epizy.com](http://piotr-mazur.epizy.com/products)
 
 ## To start the app, follow the steps below.
 
